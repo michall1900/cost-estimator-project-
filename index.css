@@ -1,0 +1,23 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(233, 223, 255);
+  padding: 32px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.content{
+  background-color: white;
+}
+
+header h1{
+  color:rgb(83, 49, 156);
+  font-size: 2em;
+  font-weight: bold;
+}
