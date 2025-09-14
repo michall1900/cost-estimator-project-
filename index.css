@@ -13,7 +13,7 @@ body{
 
 .content{
   background-color: white;
-  padding: 1em 4em;
+  padding: 0 4em 4em 4em;
   border-radius: 20px;
   width: 100%;
   max-width: 900px;
@@ -57,13 +57,13 @@ nav p.active::before{
   border-radius: 10px;
   position: absolute;
   left:-50%;
-  top: calc(4em + 4px);
+  top: calc(4em + 6px);
   z-index: 2;
   
 }
 
 .break-line{
-  border-top: 2px solid rgb(231, 231, 231);
+  border-top: 4px solid rgb(231, 231, 231);
   width: 100%;
   position: absolute;
   left: 0;
@@ -190,6 +190,84 @@ nav p:hover{
 .slider .bar .point:hover{
   transform: scale(1.2);
 }
+
+.card-wrapper{
+  width: 100%;
+  margin: 2em auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-wrapper .card{
+  margin: 1em;
+  background-color: rgb(250, 247, 255);
+  position: relative;
+  padding: 2em 3em;
+  color: rgb(83, 49, 156);
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.15s ease;
+  box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.1);
+}
+
+.card-wrapper .card:hover{
+  transform: translateY(-0.5em);
+}
+
+.card-wrapper .card .upper-title{
+  position: absolute;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(53, 10, 74, 1) 36%, rgba(83, 49, 156, 1) 100%);
+  color: white;
+  width: 100%;
+  text-align: center;
+  top: -0.5em;
+  left: 0;
+  padding: 0.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-wrapper .card .top{
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.card-wrapper .card button{
+  background-color: rgb(83, 49, 156);
+  color: white;
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.card-wrapper .card .top p{
+  margin: 0.5em;
+}
+.card-wrapper .card .top p.price{
+  color: black;
+  font-size: 3em;
+  margin: 0;
+}
+
+.card-wrapper .card button:hover{
+  transform: scale(1.05);
+}
+
+.card-wrapper .card hr{
+  width: 30%;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 2px;
+  margin: 0 auto;
+}
+
+
+
 
 
 
